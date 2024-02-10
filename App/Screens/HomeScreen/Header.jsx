@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <View style={styles.container}>
       <Image source={{uri: user.imageUrl}} style={{width:45, height: 45, borderRadius: 99}} />
-      <Image source={require('./../../../assets/images/evlogo.png')} style={{width:60, height: 60}} />
+      <Image source={require('./../../../assets/images/logo.png')} style={{width:60, height: 60}} />
       <FontAwesome name='filter' size={24} color='black' />
     </View>
   )

@@ -69,7 +69,7 @@ export default function PlaceItem({ place, isFav, markedFav }) {
                     GlobalApi.API_KEY +
                     "&maxHeightPx=800&maxWidthPx=1200",
                 }
-              : require("./../../../assets/images/charging_station.jpg")
+              : require("./../../../assets/images/charging_station.png")
           }
           style={{ width: "100%", height: 150, zIndex: -1 }}
         />
@@ -92,9 +92,6 @@ export default function PlaceItem({ place, isFav, markedFav }) {
             >
               Connectors
             </Text>
-            {/* <Text style={{ fontFamily: "rbold", fontSize: 20, marginTop: 2 }}>
-              {place?.evChargeOptions?.connectorCount} Points
-            </Text> */}
           </View>
           <Pressable onPress={() => onDirectionClick()}
            style={{padding: 12, backgroundColor: Colors.PRIMARY, borderRadius: 6, paddingHorizontal: 14}}>

@@ -3,7 +3,7 @@ import React from 'react'
 import * as WebBrowser from "expo-web-browser";
 import { useOAuth } from "@clerk/clerk-expo";
 import { useWarmUpBrowser } from '../../../hooks/warmUpBrowser';
-import Colors from './../../Utils/Colors'
+import Colors from './../../Utils/Colors';
 
 
 WebBrowser.maybeCompleteAuthSession();
@@ -30,12 +30,12 @@ export default function LoginScreen() {
 
   return (
     <View style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: 50}}>
-      <Image source={require('./../../../assets/images/ev.png')} style={styles.logoImg} />
-      <Image source={require('./../../../assets/images/car.png')} style={styles.bgImg} />
+      <Image source={require('./../../../assets/images/logo.png')} style={styles.logoImg} />
+      <Image source={require('./../../../assets/images/bg-logo.png')} style={styles.bgImg} />
 
       <View style={{padding: 20}}>
-        <Text style={styles.heading}>Your Ultimate EV Charging Companion for Seamless Power Access Anywhere, Anytime!</Text>
-        <Text style={styles.desc}>Navigate, Plug in, and Go Green with Real-time Charging Station Availability and User-friendly Maps.</Text>
+        <Text style={styles.heading}>Your Ultimate Fuel Companion for Seamless Power Access Anywhere, Anytime!</Text>
+        <Text style={styles.desc}>Navigate and Plug in with Real-time Fuel Station Availability and User-friendly Maps.</Text>
         <TouchableOpacity style={styles.button} onPress={onPress}>
             <Text style={{color: Colors.WHITE, textAlign: 'center', fontFamily: 'rmedium', fontSize: 17}}>
                 Login With Google
