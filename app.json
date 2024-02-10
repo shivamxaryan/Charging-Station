@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "fuel-Station",
-    "slug": "fuel-Station",
+    "name": "ev-charging",
+    "slug": "ev-charging",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -27,7 +27,12 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-font"
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow EV Station Finder App to use your location."
+        }
+      ]
     ]
   }
 }
